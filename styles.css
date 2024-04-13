@@ -1,0 +1,39 @@
+:root{
+      --light-grey: #efefefff;
+      --medium-grey: #d7d7d7ff;
+      --dark-grey: #383838ff;
+      --petrol-blue: #354652;
+      --light-green: #9fcfbe;
+      --medium-green: #4d9485;
+      --dark-green: #437571;
+      --light-red: #fe8b8b;
+      --medium-red: #fd6f7c;
+      --dark-red: #f76c79;
+}
+
+*, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      background-color: efefefff;
+      height: 100vh;
+}
+
+header{
+      display: grid;
+      justify-content: center;
+}
+
+.logo{
+      min-width: 50px;
+      max-width: 60px;
+      justify-self: center;
+}
+
+.title{
+      text-align: center;
+      color: var(--petrol-blue) ;
+}
