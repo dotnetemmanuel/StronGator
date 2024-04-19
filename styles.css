@@ -27,6 +27,7 @@ body {
       height: 100vh;
       padding: 1rem;
       color: var(--petrol-blue);
+      font-family: var(--ubuntu-mono);
 }
 
 header {
