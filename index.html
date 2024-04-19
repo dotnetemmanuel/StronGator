@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
       <link rel="stylesheet" href="styles.css">
+ <link rel="shortcut icon" href="StronGatorLogo.ico" type="image/x-icon">
       <title>StronGator</title>
 </head>
+
 <body>
       <header>
-            <img id="logo" class="logo"src="./images/StronGatorLogo.svg" alt="StronGator logo">
             <h1 id="title" class="title">StronGator</h1>
+            <img id="logo" class="logo" src="./images/StronGatorLogo.png" alt="StronGator logo">
       </header>
-      
+
+      <main>
+            <h2>What is a strong password?</h2>
+            <section class="intro">
+                  <div id="length" class="length criteria">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" id="req_length_img"
+                              class="req_length_img">
+                        <h3 id="req_length_text" class="req_length_text">At least 12 characters</h3>
+                  </div>
+                  <div id="characters" class="characters criteria">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" id="req_char_img"
+                              class="req_char_img">
+                        <h3 id="req_char_text" class="req_char_text">Uppercase and lowercase letters,
+                              numbers and special characters</h3>
+                  </div>
+                  <div id="sequence" class="sequence criteria">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" id="req_sequence_img"
+                              class="req_sequence_img">
+                        <h3 id="req_sequence_text" class="req_sequence_text">No phrase, name or word. No letters or
+                              numbers in sequence.</h3>
+                  </div>
+                  <div id="frequency" class="frequency criteria">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" id="req_frequency_img"
+                              class="req_frequency_img">
+                        <h3 id="req_frequency_text" class="req_frequency_text">Should be UNIQUE (never reused)</h3>
+                  </div>
+            </section>
+
+            <section id="generator" class="generator">
+                  <table>
+                        <tr>
+                              <td><label for="character_nr">Password length</label></td>
+                              <td><input type="range" name="character_nr" id="character_nr" min="12" max="50"
+                                          value="12"><span id="number_choice" class="number_choice">12</span></td>
+
+                        </tr>
+                        <tr>
+                              <td><label for="lowercase">Include lowercase</label></td>
+                              <td><input type="checkbox" name="lowercase" id="lowercase"><span>[a-z]</span></td>
+
+                        </tr>
+                        <tr>
+                              <td><label for="uppercase">Include uppercase</label></td>
+                              <td><input type="checkbox" name="uppercase" id="uppercase"><span>[A-Z]</span></td>
+
+                        </tr>
+
+
+                        <tr>
+                              <td><label for="numbers">Include numbers</label></td>
+                              <td><input type="checkbox" name="numbers" id="numbers"><span>[1-9]</span></td>
+
+                        </tr>
+                        <tr>
+                              <td><label for="symbols">Include symbols</label></td>
+                              <td><input type="checkbox" name="symbols" id="symbols"><span>[!";#$%&'()*+,-./:;<=>
+                                                ?@[]^_`{|}~]</span></td>
+
+                        </tr>
+                  </table>
+
+                  <section id="result" class="result">
+                        <h3 id="password" class="password">X.t%vN+V;j(eWw>#J&@)hk6^u][HYm`7x?UCS'KZ4/b!g8{Msn</h3><button><img src="./images/copy.svg" alt=""></button>
+                  </section>
+            </section>
+      </main>
       <script src="script.js"></script>
 </body>
+
 </html>

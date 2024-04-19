@@ -1,4 +1,4 @@
-:root{
+:root {
       --light-grey: #efefefff;
       --medium-grey: #d7d7d7ff;
       --dark-grey: #383838ff;
@@ -9,31 +9,128 @@
       --light-red: #fe8b8b;
       --medium-red: #fd6f7c;
       --dark-red: #f76c79;
+
+      --ubuntu-mono: "Ubuntu Mono",
+            monospace;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
 }
 
-body{
-      background-color: efefefff;
+body {
+      background-color: var(--light-grey);
       height: 100vh;
+      padding: 1rem;
+      color: var(--petrol-blue);
 }
 
-header{
+header {
+      display: grid;
+      gap: 1rem;
+      justify-content: center;
+      font-family: var(--ubuntu-mono);
+}
+
+.logo {
+      min-width: 80px;
+      max-width: 120px;
+      justify-self: center;
+
+}
+
+.title {
+      text-align: center;
+}
+
+.intro {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4 1fr);
+      justify-content: space-around;
+}
+
+.criteria {
       display: grid;
       justify-content: center;
+
 }
 
-.logo{
-      min-width: 50px;
-      max-width: 60px;
-      justify-self: center;
-}
-
-.title{
+.criteria h3 {
+      width: 170px;
       text-align: center;
-      color: var(--petrol-blue) ;
+      align-self: start;
+}
+
+.criteria img {
+      justify-self: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+}
+
+.length {
+
+      grid-row: 1;
+      grid-column: 1;
+      text-wrap: wrap;
+
+}
+
+.characters {
+      grid-row: 1;
+      grid-column: 2;
+}
+
+.sequence {
+      grid-row: 1;
+      grid-column: 3;
+}
+
+.frequency {
+      grid-row: 1;
+      grid-column: 4;
+}
+
+td {
+      padding: .5rem;
+}
+
+td span {
+      margin-left: 1rem;
+}
+
+.result {
+      display: grid;
+      margin: auto;
+      height: 4rem;
+      width: 75ch;
+      border-radius: 50px;
+      background: #efefef;
+      box-shadow: 20px 20px 60px var(--medium-grey),
+            -20px -20px 60px #ffffff;
+      align-items: center;
+      text-align: center;
+      grid-template-columns: 1fr 60px;
+}
+
+.password {
+      font-weight: normal;
+      grid-column: 1;
+}
+
+button {
+      grid-column: 2;
+      width: 15px;
+      border: none;
+      justify-self: center;
+      align-self: center;
+}
+
+button:active{
+      scale: 0.9;
 }
