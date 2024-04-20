@@ -26,7 +26,7 @@
 
 body {
       background-color: var(--light-grey);
-      height: 100vh;
+      min-height: 100vh;
       padding: 3rem;
       color: var(--petrol-blue);
       font-family: var(--ubuntu-mono);
@@ -208,6 +208,8 @@ button:active {
 
 @media(max-width: 850px) {
 
+
+    
       .intro {
             display: flex;
             flex-direction: column;
