@@ -209,11 +209,14 @@ button:active {
 @media(max-width: 850px) {
 
 
-    
       .intro {
             display: flex;
             flex-direction: column;
 
+      }
+
+      .what_is {
+            text-align: center;
       }
 
       .criteria img {
@@ -227,6 +230,7 @@ button:active {
       .result {
             width: 100%;
             grid-template-columns: auto 60px;
+            margin-top: 1.5rem;
       }
 
       .result h3 {
