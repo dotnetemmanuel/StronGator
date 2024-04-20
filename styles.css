@@ -229,7 +229,7 @@ button:active {
 
       .result {
             width: 100%;
-            grid-template-columns: auto 60px;
+            grid-template-columns: 1fr 60px;
             margin-top: 1.5rem;
       }
 
