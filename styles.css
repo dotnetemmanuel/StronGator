@@ -236,5 +236,6 @@ button:active {
       .result h3 {
             font-size: 1rem;
             margin-left: 30px;
+            text-wrap: wrap;
       }
 }
