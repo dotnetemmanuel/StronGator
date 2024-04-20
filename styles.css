@@ -136,6 +136,10 @@ td span {
       margin-left: 1rem;
 }
 
+td input {
+      margin-left: 1rem;
+}
+
 #password_length {
       accent-color: var(--dark-red);
       cursor: pointer;
@@ -209,7 +213,7 @@ button:active {
             flex-direction: column;
 
       }
-     
+
       .criteria img {
             margin-bottom: 10px
       }
