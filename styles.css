@@ -12,6 +12,8 @@
 
       --ubuntu-mono: "Ubuntu Mono",
             monospace;
+
+      --roboto: "Roboto", sans-serif;
 }
 
 *,
@@ -25,27 +27,29 @@
 body {
       background-color: var(--light-grey);
       height: 100vh;
-      padding: 1rem;
+      padding: 3rem;
       color: var(--petrol-blue);
       font-family: var(--ubuntu-mono);
 }
 
 header {
       display: grid;
-      gap: 1rem;
+      gap: 1.5rem;
       justify-content: center;
       font-family: var(--ubuntu-mono);
 }
 
 .logo {
       min-width: 80px;
-      max-width: 120px;
+      max-width: 160px;
       justify-self: center;
-
+      margin-bottom: 2rem;
 }
 
 .title {
       text-align: center;
+      font-size: 2.75rem;
+      letter-spacing: 1px;
 }
 
 .intro {
@@ -53,6 +57,18 @@ header {
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4 1fr);
       justify-content: space-around;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 31px 31px 62px #979797,
+            -31px -31px 62px #ffffff;
+      width: 100%;
+}
+
+.what_is {
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+
 }
 
 .criteria {
@@ -61,30 +77,37 @@ header {
 
 }
 
-.criteria h3 {
+.criteria p {
       width: 170px;
       text-align: center;
       align-self: start;
+      font-size: .9rem;
+      font-family: "Ubuntu", sans-serif;
+
 }
 
 .criteria img {
       justify-self: center;
-      width: 150px;
-      height: 150px;
+      width: 80px;
       border-radius: 5px;
+      filter: brightness(.9);
+}
+
+.generator h5 {
+      font-family: var(--roboto);
+
 }
 
 .length {
 
       grid-row: 1;
       grid-column: 1;
-      text-wrap: wrap;
-
 }
 
 .characters {
       grid-row: 1;
       grid-column: 2;
+
 }
 
 .sequence {
@@ -97,12 +120,25 @@ header {
       grid-column: 4;
 }
 
+
+
 td {
-      padding: .5rem;
+      color: var(--petrol-blue);
+      padding: .5rem 0;
+      font-size: 1rem;
+}
+
+td * {
+      vertical-align: middle;
 }
 
 td span {
       margin-left: 1rem;
+}
+
+#password_length {
+      accent-color: var(--dark-red);
+      cursor: pointer;
 }
 
 .result {
@@ -112,8 +148,8 @@ td span {
       width: 75ch;
       border-radius: 50px;
       background: #efefef;
-      box-shadow: 20px 20px 60px var(--medium-grey),
-            -20px -20px 60px #ffffff;
+      box-shadow: 31px 31px 62px #979797,
+            -31px -31px 62px #ffffff;
       align-items: center;
       text-align: center;
       grid-template-columns: 1fr 60px;
@@ -124,6 +160,36 @@ td span {
       grid-column: 1;
 }
 
+.generate {
+      margin-top: 1rem;
+      display: grid;
+      margin-bottom: 1rem;
+      justify-content: center;
+
+
+}
+
+.generate input {
+      width: auto;
+      height: auto;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      background: #efefef;
+      box-shadow: 31px 31px 62px #979797,
+            -31px 0px 62px #ffffff;
+      border: none;
+      font-family: var(--roboto);
+      letter-spacing: 1px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      color: var(--petrol-blue);
+
+      &:active {
+            scale: 0.9;
+      }
+}
+
 button {
       grid-column: 2;
       width: 15px;
@@ -132,6 +198,33 @@ button {
       align-self: center;
 }
 
-button:active{
+button:active {
       scale: 0.9;
+}
+
+@media(max-width: 850px) {
+
+      .intro {
+            display: flex;
+            flex-direction: column;
+
+      }
+     
+      .criteria img {
+            margin-bottom: 10px
+      }
+
+      .criteria p {
+            margin-bottom: 30px;
+      }
+
+      .result {
+            width: 100%;
+            grid-template-columns: auto 60px;
+      }
+
+      .result h3 {
+            font-size: 1rem;
+            margin-left: 30px;
+      }
 }
