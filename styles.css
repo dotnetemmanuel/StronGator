@@ -233,7 +233,9 @@ button:active {
       }
 
       .result h3 {
-            word-wrap: break-word;
+            display: block;
+            overflow-wrap: break-word;
+            word-break: break-all;
             font-size: 1rem;
             margin-left: 30px;
       }
