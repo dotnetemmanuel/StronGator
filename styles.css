@@ -60,9 +60,9 @@ header {
       margin-bottom: 2rem;
       padding: 1rem;
       border-radius: 10px;
-            background: #efefef;
-            box-shadow: 5px 5px 10px #979797,
-                  -5px -5px 10px #ffffff;
+      background: #efefef;
+      box-shadow: 5px 5px 10px #979797,
+            -5px -5px 10px #ffffff;
       width: 100%;
 }
 
@@ -152,9 +152,9 @@ td input {
       height: 4rem;
       width: 75ch;
       border-radius: 50px;
-            background: #efefef;
-            box-shadow: inset 5px 5px 10px #979797,
-                  inset -5px -5px 10px #ffffff;
+      background: #efefef;
+      box-shadow: inset 5px 5px 10px #979797,
+            inset -5px -5px 10px #ffffff;
       align-items: center;
       text-align: center;
       grid-template-columns: 1fr 60px;
@@ -179,9 +179,9 @@ td input {
       height: auto;
       padding: 1rem 1.5rem;
       border-radius: 50px;
-            background: #efefef;
-            box-shadow: 5px 5px 10px #979797,
-                  -5px -5px 10px #ffffff;
+      background: #efefef;
+      box-shadow: 5px 5px 10px #979797,
+            -5px -5px 10px #ffffff;
       border: none;
       font-family: var(--roboto);
       letter-spacing: 1px;
